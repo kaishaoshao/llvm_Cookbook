@@ -1,4 +1,4 @@
 #!/bin/bash
-
+rm -rf build
 mkdir -p build
-CC=clang CXX=clang++ cmake -S . -B build && make -C build -j $(nproc)
+cmake -S . -B build && make -C build -j $(nproc)

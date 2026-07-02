@@ -1,4 +1,5 @@
 #include "../include/Parser.h"
+#include <llvm/Support/raw_ostream.h>
 
 using namespace std;
 using namespace toy;

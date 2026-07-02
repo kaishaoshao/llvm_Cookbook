@@ -14,6 +14,7 @@
 #include <llvm/ADT/StringRef.h>
 #include <llvm/Support/Casting.h>
 
+#include <optional>
 #include <vector>
 
 namespace toy{

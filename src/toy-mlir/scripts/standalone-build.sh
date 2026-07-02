@@ -1,7 +1,7 @@
-#!/bin/bash
-LLVM_BUILD_DIR=/Users/kaishaoshao/Desktop/triton/llvm-project/build
-MLIR_DIR=${LLVM_BUILD_DIR}/lib/cmake/mlir
-LLVM_EXTERNAL_LIT=${LLVM_BUILD_DIR}/bin/llvm-lit
 
-cmake -G Ninja .. -DMLIR_DIR=$MLIR_DIR -DLLVM_EXTERNAL_LIT=$LLVM_EXTERNAL_LIT
-cmake --build . --target toyc
+MLIR_DIR=/home/shaokai/Desktop/code/llvm/tritons/triton/llvm-project/build-mlir/lib/cmake/mlir
+LLVM_EXTERNAL_LIT=/home/shaokai/Desktop/code/llvm/tritons/triton/llvm-project/build-mlir/bin/llvm-lit
+
+
+cmake -G Ninja -B build -S . -DMLIR_DIR=$MLIR_DIR -DLLVM_EXTERNAL_LIT=$LLVM_EXTERNAL_LIT
+cmake --build build --target toy-mlir
