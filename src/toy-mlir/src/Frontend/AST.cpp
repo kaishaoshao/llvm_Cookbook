@@ -4,7 +4,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-#include "../include/AST.h"
+#include "AST.h"
 
 #include <llvm/ADT/Twine.h>
 #include <llvm/ADT/TypeSwitch.h>

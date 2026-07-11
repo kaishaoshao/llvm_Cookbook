@@ -1,6 +1,6 @@
-#include "./include/Parser.h"
-#include "include/AST.h"
-#include "include/Lexer.h"
+#include "AST.h"
+#include "Lexer.h"
+#include "Parser.h"
 
 #include "llvm/ADT/StringRef.h"
 #include "llvm/Support/CommandLine.h"

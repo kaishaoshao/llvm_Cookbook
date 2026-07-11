@@ -1,12 +1,10 @@
-# 单个测试用例构建
-add_executable(test_Lexer
-    test_Lexer.cpp
-    ${CMAKE_SOURCE_DIR}/paser/AST.cpp
+add_executable(test_mlir_ch1_lexer
+  test_Lexer.cpp
 )
 
-target_link_libraries(test_Lexer PRIVATE
-    AST_LIB
-    GTest::GTest
-)
+target_link_libraries(test_mlir_ch1_lexer PRIVATE test_common)
 
-add_test(NAME lexer_test COMMAND test_Lexer)
+add_test(
+  NAME mlir-ch1-lexer-smoke
+  COMMAND test_mlir_ch1_lexer ${CMAKE_CURRENT_SOURCE_DIR}/test_Lexer.toy
+)
