@@ -1,9 +1,5 @@
-find_package(GTest REQUIRED)
+# 测试框架配置
+enable_testing()
 
-add_library(test_common INTERFACE)
-target_link_libraries(test_common INTERFACE toy_headers GTest::gtest)
-
-# Chapter-specific tests live under test/chN and should mirror the
-# corresponding mlir-chN target naming.
+# 添加测试子目录
 add_subdirectory(ch1)
-add_subdirectory(ch2)

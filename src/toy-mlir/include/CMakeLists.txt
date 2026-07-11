@@ -1,5 +1,5 @@
-add_library(toy_headers INTERFACE)
-target_include_directories(toy_headers INTERFACE
-  ${CMAKE_CURRENT_LIST_DIR}/Frontend
-  ${LLVM_INCLUDE_DIRS}
+# 头文件目录声明
+add_library(INCLUDE_DIRS INTERFACE)
+target_include_directories(INCLUDE_DIRS INTERFACE 
+${CMAKE_CURRENT_LIST_DIR}
 )
