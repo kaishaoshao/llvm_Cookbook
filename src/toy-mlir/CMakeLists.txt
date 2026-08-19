@@ -34,14 +34,5 @@ llvm_map_components_to_libnames(llvm_libs
 
 add_subdirectory(include)
 add_subdirectory(src)
-
-add_subdirectory(include)
-add_subdirectory(paser)
 add_subdirectory(test)
 
-add_executable(toy-mlir toyc.cpp)
-
-add_mlir_chapter(mlir-ch1 test/ch1/toyc.cpp)
-add_mlir_chapter(mlir-ch2 test/ch2/toyc.cpp)
-
-add_subdirectory(test)
